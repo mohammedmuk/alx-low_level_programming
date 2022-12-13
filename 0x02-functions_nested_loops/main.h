@@ -3,13 +3,17 @@
 
 #include "main.h"
 #include <stdio.h>
-int _putchar(char c);
+#include <unistd.h>
+int _putchar(char c)
+{
+return (write(1, &c, 1));
+}
 int print_alphabet()
 {
 int ch;
 for (ch = 'a'; ch <= 'z'; ch++)
 {
-putchar(ch);
+_putchar(ch);
 }
 }
 #endif
