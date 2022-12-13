@@ -3,4 +3,12 @@
 
 #include "main.h"
 int _putchar(char c);
+int print_alphabet()
+{
+int ch;
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+putchar(ch);
+}
+}
 #endif
