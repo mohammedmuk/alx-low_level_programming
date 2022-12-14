@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * _islower.c - check parameter is equal lowercase or not
- *
+ * _islower - check parameter is equal lowercase or not
+ * @c: The character to print
  * Return: Always 0 (Success).
  */
 int _islower(int c)
