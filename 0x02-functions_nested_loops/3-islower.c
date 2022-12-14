@@ -9,12 +9,16 @@
  */
 int _islower(int c)
 {
-if (c >= 'a' || c <= 'z')
+int ch;
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+if (c == ch)
 {
 return (1);
 }
-else
+else if (c == 122)
 {
 return (0);
+}
 }
 }
