@@ -3,12 +3,12 @@
 #include "main.h"
 
 /**
- * _abc - return positive data
+ * _abs - return positive data
  *
  * @n: number is returned
  * Return: n
  */
-int _abc(int n)
+int _abs(int n)
 {
 if (n < 0)
 {
