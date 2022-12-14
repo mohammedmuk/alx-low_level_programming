@@ -23,6 +23,7 @@ return (0);
 else
 {
 putchar('-');
+putchar('1');
 return (-1);
 }
 }
