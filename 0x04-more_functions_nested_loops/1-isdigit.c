@@ -3,12 +3,12 @@
 
 /**
  * _isdigit - check value is it parameter or not
- * @num: digit
- * Return: num
+ * @c: digit
+ * Return: c
  */
-int _isdigit(int num)
+int _isdigit(int c)
 {
-	if (num >= 0 && num <= 9)
+	if (c >= 0 && c <= 9)
 	{
 		return (1);
 	}
