@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - causes an infinite loop
  * Return: 0
  */
-
 int main(void)
 {
 	int i;
@@ -13,8 +11,10 @@ int main(void)
 
 	i = 0;
 
+	/* don’t delete it! */
+
 	while(i > 10)
-	{       /* don’t delete it! */
+	{
 		putchar(i);
 	}
 
