@@ -3,12 +3,12 @@
 
 /**
  * mul - return multiplies numbers
- * @num1: number 1
- * @num2: number 2
+ * @a: number 1
+ * @b: number 2
  * Return: num1 * num2
  */
 
-int mul(int num1, int num2)
+int mul(int a, int b)
 {
-	return (num1 * num2);
+	return (a * b);
 }
