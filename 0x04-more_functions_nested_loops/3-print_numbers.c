@@ -4,15 +4,15 @@
 /**
  * print_numbers - print number from 0 to 9
  * @num: number
- * Return: num
  */
 
-void print_numbers()
+void print_numbers(void)
 {
 	int num;
-	for (num = '0'; num <= '9' num++)
+
+	for (num = '0'; num <= '9'; num++)
 	{
-		_putchar(num);
+		putchar(num);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
