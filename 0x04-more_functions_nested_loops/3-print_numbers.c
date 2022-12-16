@@ -2,17 +2,20 @@
 #include "main.h"
 
 /**
- * print_numbers - print number form 0 to 9
+ * print_numbers - print numbers in ch
  * @ch: number
- *
- * Return: no return
+ * Return: Always 0 (Success)
  */
 
-void print_numbers(int ch)
+void print_numbers(void)
 {
-	for (ch = '0'; ch <= '9'; ch++)
-	{
-		_putchar(ch);
-	}
-	_putchar('\n');
+
+int ch = '0';
+
+while (ch <= '9')
+{
+_putchar(ch);
+ch++;
+}
+_putchar('\n');
 }
