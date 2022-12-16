@@ -4,10 +4,6 @@
 /**
  * print_most_numbers - print number from 0 to 9 without 2 and 4
  *
- * main - Entry point
- *
- * @num: number
- *
  * Return: no return
  */
 
