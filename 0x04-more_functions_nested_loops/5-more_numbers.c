@@ -15,14 +15,20 @@ for (num1 = 0; num1 <= 9; num1++)
 {
 	for (num2 = '0'; num2 <= '9'; num2++)
 	{
-		putchar(num2);
+		_putchar(num2);
 	}
 
 	for (num3 = '0'; num3 <= '4'; num3++)
 	{
-		putchar(num4);
-		putchar(num3);
+		_putchar(num4);
+		_putchar(num3);
 	}
 	putchar('\n');
 }
+}
+
+int main(void)
+{
+	more_numbers();
+	return (0);
 }
