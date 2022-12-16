@@ -3,18 +3,16 @@
 
 /**
  * print_numbers - print number form 0 to 9
- * @n: number
+ * @ch: number
  *
  * Return: no return
  */
 
-void print_numbers(void)
+void print_numbers(int ch)
 {
-	int n;
-
-	for (n = '0'; n <= '9'; n++)
+	for (ch = '0'; ch <= '9'; ch++)
 	{
-		_putchar(n);
+		_putchar(ch);
 	}
 	_putchar('\n');
 }
