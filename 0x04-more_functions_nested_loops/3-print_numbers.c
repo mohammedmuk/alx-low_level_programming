@@ -3,7 +3,6 @@
 
 /**
  * print_numbers - print numbers in ch
- * @ch: number
  * Return: Always 0 (Success)
  */
 
