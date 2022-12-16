@@ -26,9 +26,3 @@ for (num1 = 0; num1 <= 9; num1++)
 	putchar('\n');
 }
 }
-
-int main(void)
-{
-	more_numbers();
-	return (0);
-}
