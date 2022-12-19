@@ -9,12 +9,17 @@
  * Return: num
  */
 
-int _strlen(char s[], int num)
-	num = 0;
+int _strlen(char *s)
+{
+
+int num;
+
+num = 0;
 
 	while (s[num] != '\0')
 	{
 		num++;
 	}
+
 	return (num);
 }
