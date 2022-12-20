@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 
 	for (num = 0; num < n; num++)
 	{
-		if (num == 4)
+		if (num == n - 1)
 		{
 			printf("%d", a[num]);
 		}
