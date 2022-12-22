@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strcmp - copy string
+ * _strncpy - copy string
  * @dest: string1
  * @src: string2
  * @n: number of copy
@@ -10,7 +10,7 @@
  * Return: dest
  */
 
-char _strcmp(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int byte;
 
