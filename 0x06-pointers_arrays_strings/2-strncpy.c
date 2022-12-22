@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * _strcmp - copy string
+ * @dest: string1
+ * @src: string2
+ * @n: number of copy
+ *
+ * Return: dest
+ */
+
 char _strcmp(char *dest, char *src, int n)
 {
 	int byte;
