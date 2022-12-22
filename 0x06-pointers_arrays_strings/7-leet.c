@@ -20,7 +20,7 @@ char *leet(char *s)
 	{
 		leetNum = 0;
 
-		while (lettNum < 10)
+		while (leetNum < 10)
 		{
 			if (leetLetters[leetNum] == s[stringNum])
 			{
