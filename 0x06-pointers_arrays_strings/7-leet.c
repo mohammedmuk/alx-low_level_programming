@@ -10,7 +10,7 @@
 
 char *leet(char *s)
 {
-	int stringNum, lettNum;
+	int stringNum, leetNum;
 	char leetLetters[] = "aAeEoOtTlL";
 	char leetNums[] = "4433007711";
 
