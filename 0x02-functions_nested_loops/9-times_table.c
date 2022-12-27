@@ -23,7 +23,21 @@ void times_table(void)
 
 				continue;
 			}
-			printf("%d, ", n);
+
+			if (i >= 5 && n >= 5)
+			{
+				printf("%d, ", n);
+
+				continue;
+			}
+
+			if (n >= 8 && i >= 2)
+			{
+				printf("%d, ", n);
+
+				continue;
+			}
+			printf("%d,  ", n);
 		}
 
 		putchar('\n');
