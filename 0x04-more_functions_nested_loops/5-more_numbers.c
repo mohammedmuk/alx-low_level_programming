@@ -19,9 +19,9 @@ for (i = 0; i <= 9; i++)
 	{
 		if (num == '1')
 		{
-			_putchar(num);
+			putchar(num);
 		}
-		_putchar(c);
+		putchar(c);
 
 		if (c == '9' && num == '0')
 		{
@@ -31,6 +31,6 @@ for (i = 0; i <= 9; i++)
 		}
 	}
 
-	_putchar('\n');
+	putchar('\n');
 }
 }
