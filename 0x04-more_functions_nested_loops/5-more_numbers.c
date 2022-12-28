@@ -9,20 +9,28 @@
 
 void more_numbers(void)
 {
-int num1, num2, num3, num4 = '1';
+int i, c, num, num1;
 
-for (num1 = 0; num1 <= 9; num1++)
+for (i = 0; i <= 9; i++)
 {
-	for (num2 = '0'; num2 <= '9'; num2++)
+	num = '0', num1 = '9';
+
+	for (c = '0'; c <= num1; c++)
 	{
-		_putchar(num2);
+		if (num == '1')
+		{
+			_putchar(num);
+		}
+		_putchar(c);
+
+		if (c == '9' && num == '0')
+		{
+			c = '0';
+			num++;
+			num1 = '4';
+		}
 	}
 
-	for (num3 = '0'; num3 <= '4'; num3++)
-	{
-		_putchar(num4);
-		_putchar(num3);
-	}
-	putchar('\n');
+	_putchar('\n');
 }
 }
