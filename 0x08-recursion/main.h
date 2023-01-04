@@ -10,5 +10,7 @@ int _sqrt_recursion(int n);
 int sqr(int n, int i);
 int _strlen_recursion(char *s);
 int strln(char *s, int i);
+void _print_rev_recursion(char *s);
+int rev(char *s, int i);
 
 #endif
