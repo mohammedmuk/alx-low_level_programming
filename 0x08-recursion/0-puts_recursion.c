@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * puts - print string
+ * _puts_recursion - print string
  * @s: string
  *
  * Return: no return
