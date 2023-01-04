@@ -7,7 +7,7 @@
  * @s: string 1
  * @c: string 2
  *
- * Return: arrc
+ * Return: vlaue
  */
 
 char *_strchr(char *s, char c)
@@ -27,4 +27,20 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
+
+	return arrc;
+}
+
+int main(void)
+{
+	char *s = "hello";
+	char *f;
+
+	f = _strchr(s, 'l');
+
+	if (s != NULL)
+	{
+		printf("%s\n", f);
+	}
+	return (0);
 }
