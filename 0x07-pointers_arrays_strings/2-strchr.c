@@ -12,35 +12,17 @@
 
 char *_strchr(char *s, char c)
 {
-	int i, n;
-	char arrc[100];
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i])
 	{
 		if (s[i] == c)
-		{
-			for (n = 0; s[i] != '\0'; n++)
-			{
-				arrc[n] = s[i];
-				i++;
-			}
-			break;
-		}
+			return (s + i);
+		if (s[i + 1] == c)
+			return (s + i + 1);
+		i++;
+
 	}
 
-	return arrc;
-}
-
-int main(void)
-{
-	char *s = "hello";
-	char *f;
-
-	f = _strchr(s, 'l');
-
-	if (s != NULL)
-	{
-		printf("%s\n", f);
-	}
 	return (0);
 }
