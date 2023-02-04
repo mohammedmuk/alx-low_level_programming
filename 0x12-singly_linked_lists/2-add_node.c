@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  *  _strlen - Returns the lenght of a string.
@@ -14,6 +13,7 @@ int _strlen(const char *s)
 	for (len = 0; s[len] != '\0'; len++){}
 
 	return (len);
+}
 
 /**
  * *add_node - Return the number of elements in a linked list
@@ -38,4 +38,3 @@ int _strlen(const char *s)
 
 		return (n_node);
 	}
-}
