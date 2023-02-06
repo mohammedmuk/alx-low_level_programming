@@ -22,7 +22,7 @@ void print_number(int n)
 	{
 		n = n - 2 * n;
 		putchar('-');
-		putchar (n + '0');
+		putchar(n + '0');
 	}
 	else
 	{
