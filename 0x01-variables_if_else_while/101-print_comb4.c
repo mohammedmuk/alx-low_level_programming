@@ -16,17 +16,17 @@ int main(void)
 	{
 		for (hol1 = hol + 1 ; hol1 <= 57 ; hol1++)
 		{
-			putchar (hol);
-			putchar (hol1);
-			putchar (hol2);
+			putchar(hol);
+			putchar(hol1);
+			putchar(hol2);
 
 			if (hol == 55 && hol1 == 56 && hol2 == 57)
 			{
-				putchar ('\n');
+				putchar('\n');
 				break;
 			}
-			putchar (',');
-			putchar (' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	return (0);
