@@ -13,5 +13,6 @@ int strln(char *s, int i);
 void _print_rev_recursion(char *s);
 int rev(char *s, int i);
 int is_prime_number(int n);
+int is_palindrome(char *s);
 
 #endif
