@@ -8,7 +8,6 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
 void print_times_table(int n)
 {
 	int i, j, k;
@@ -20,12 +19,10 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				k = i * j;
-
 				if (j != 0)
 				{
 					putchar (',');
 					putchar (' ');
-
 					if (k >= 10 && k < 100)
 					{
 						putchar (' ');
