@@ -12,5 +12,6 @@ int _strlen_recursion(char *s);
 int strln(char *s, int i);
 void _print_rev_recursion(char *s);
 int rev(char *s, int i);
+int is_prime_number(int n);
 
 #endif
