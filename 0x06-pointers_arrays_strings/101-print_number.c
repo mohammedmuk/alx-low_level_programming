@@ -15,5 +15,5 @@ void print_number(int n)
 	sprintf(str, "%d", n);
 
 	for (i = 0; str[i] != '\0'; i++)
-		putchar(str[i]);
+		_putchar(str[i]);
 }
