@@ -1,46 +1,45 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
-/**
- * read_textfile - reads a text file and prints it to the POSIX standard output
- * @filename: type char filename
- * @letters: type size_t letters
- * Return: if cannot be oppened or read 0, if is NULL 0, if writes fail 0\
- */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
+	int fl;
+	char *buff;
 	ssize_t rd, wr;
-	char *buf;
+
+	buff = malloc(sizeof(char) * letters);
 
 	if (filename == NULL)
 		return (0);
-	buf = malloc(sizeof(char) * letters);
-	if (buf == NULL)
-		return (0);
-	fd = open(filename, O_RDONLY);
-	if (fd == -1)
-	{
-		free(buf);
-		return (0);
-	}
-	rd = read(fd, buf, letters);
-	if (rd == -1)
-	{
-		free(buf);
-		close(fd);
-		return (0);
-	}
-	close(fd);
-	wr = write(STDOUT_FILENO, buf, rd);
-	if (wr == -1)
-	{
-		free(buf);
-		return (0);
-	}
-	if (wr != rd)
-		return (0);
+	fl = open(filename, O_RDONLY);
+
+	rd = read(fl, buff, letters);
+
+	close(fl);
+
+	wr = write(STDOUT_FILENO, buff, rd);
+
 	return (rd);
 }
+
+int main(int ac, char **av)
+{
+    ssize_t n;
+
+    if (ac != 2)
+    {
+        dprintf(2, "Usage: %s filename\n", av[0]);
+        exit(1);
+    }
+    n = read_textfile(av[1], 114);
+    printf("\n(printed chars: %li)\n", n);
+    n = read_textfile(av[1], 1024);
+    printf("\n(printed chars: %li)\n", n);
+    return (0);
+}
+
